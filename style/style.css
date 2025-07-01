@@ -1,0 +1,117 @@
+/* main color: #456fe8 */
+/* light blue: #7e9cda */
+/* dark grey: #7b7b7b */
+/* light grey: #acaeab */
+:root {
+  --main-color: #456fe8;
+  --light-blue: #7e9cda;
+  --dark-grey: #505050;
+  --light-grey: #acaeab;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+.parent {
+  width: 100%;
+  height: 100vh;
+  background-color: #eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  width: 30rem;
+  height: 30rem;
+  border-radius: 1.5rem;
+  overflow: hidden;
+  box-shadow: 1px 1px 30px rgba(128, 128, 128, 0.482);
+}
+.header-card {
+  background-color: var(--main-color);
+  height: 40%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+.header-card .img {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  margin-bottom: -2.5rem;
+  border: 0.2rem solid white;
+  outline: 0.2rem solid var(--main-color);
+}
+.body-card .name {
+  text-align: center;
+  margin-top: 4rem;
+  color: var(--dark-grey);
+}
+.body-card p {
+  color: var(--light-grey);
+  font-size: .8rem;
+}
+.icons {
+  margin-top: 1.5rem;
+  text-align: center;
+  font-size: 1.8rem;
+}
+.fa-facebook {
+  color: #1877f2;
+}
+.fa-twitter {
+  color: #1da1f2;
+}
+.fa-youtube {
+  color: #ff0000;
+}
+.fa-instagram {
+  border-radius: 5px;
+  background: linear-gradient(
+    to right,
+    #feda75,
+    #fa7e1e,
+    #d62976,
+    #962fbf,
+    #4f5bd5
+  );
+  padding: 2px 5px;
+  color: white;
+}
+
+.buttons {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+}
+.buttons button {
+  border: none;
+  background-color: var(--main-color);
+  padding: 0.5rem 1.8rem;
+  border-radius: 30px;
+  color: white;
+  /* font-weight: bold; */
+  margin: 0 0.5rem;
+  font-size: 0.8rem;
+  transition: all 0.5s;
+}
+.buttons button:hover {
+  background-color: var(--light-blue);
+}
+
+.status {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  gap: 2rem;
+  color: var(--light-grey);
+  font-weight: lighter;
+}
+.status .piece:nth-child(1),
+.status .piece:nth-child(2) {
+  border-right: 1px solid var(--light-grey);
+  padding-right: 2rem;
+}
